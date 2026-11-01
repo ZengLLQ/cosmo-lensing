@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cosmo-lensing"
+version = "0.1.0"
+description = "Gravitational lensing ray-tracing and cosmological deflection engine in Python."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "ZengLLQ"}
+]
+keywords = [
+    "astrophysics",
+    "gravitational-lensing",
+    "cosmology",
+    "ray-tracing",
+    "einstein-ring",
+    "dark-matter",
+    "nfw-profile",
+    "general-relativity",
+    "time-delay",
+    "python"
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
